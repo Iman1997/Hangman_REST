@@ -55,7 +55,6 @@ public class HangmanResource {
     public String getHtml() {
         return "<html><body><h1>Hello, World!!</body></h1></html>";
     }
-
     /**
      * PUT method for updating or creating an instance of HangmanResource
      * @param content representation for the resource
