@@ -20,10 +20,8 @@ import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
 import javax.ws.rs.GET;
-import static javax.ws.rs.HttpMethod.POST;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PUT;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
@@ -53,7 +51,7 @@ public class HangmanResource {
     @Path("HelloWorld")
     @Produces("text/html")
     public String getHtml() {
-        return "<html><body><h1>Hello, World!!</body></h1></html>";
+        return "<html><body><h1>Hello, World!!</h1></body></html>";
     }
     /**
      * PUT method for updating or creating an instance of HangmanResource
@@ -63,7 +61,7 @@ public class HangmanResource {
     @Path("Login")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response login (UserData data) throws RemoteException {
-          Brugeradmin ba;
+        Brugeradmin ba;
         Bruger b;
         String loginData = null;
            
